@@ -1,0 +1,61 @@
+.jumbotron {
+  background-color: rgb(39, 34, 28);
+  padding: 5vh 0;
+  text-align: center;
+  color: white;
+  transition: 2s;
+}
+.jumbotron:hover {
+  color: aqua;
+}
+.intro {
+  animation-name: text-animate;
+  animation-duration: 5s;
+  position: relative;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+.home-head {
+  color: aqua;
+}
+.black {
+  background-color: black;
+  color: aqua;
+}
+
+@keyframes text-animate {
+  0% {
+    opacity: 0;
+    left: -10000px;
+  }
+  25% {
+    color: aquamarine;
+  }
+  50% {
+    opacity: 0.7;
+    color: aqua;
+    transform: translateX(100px);
+  }
+  100% {
+    opacity: 1;
+    color: aqua;
+  }
+}
+.card {
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  transition: 1s;
+}
+.card:hover {
+  color: burlywood;
+  transform: rotate(10deg);
+}
+
+footer {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
